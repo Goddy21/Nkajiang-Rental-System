@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <img id="image" src="images/logo.jpg">
+    <h1>Registration</h1>
+    <form action="connect.php" method="post">
+        <label id="text" for="firstname">First Name: </label>
+        <input type="text" id="firstname" name="firstname">
+        <br>
+        <label id="text" for="surname">Surname: </label>
+        <input type="text" id="surname" name="surname">
+        <br>
+        <label id="text" for="age">Age: </label>
+        <input type="number" id="age" name="age" min=18>
+        <br>
+        <label id="text" for="email">Email: </label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label id="text" for="number">Tel: </label>
+        <input type="number" id="number" name="number">
+		<br>
+		<label id="text" for="password">Password: </label>
+        <input type="number" id="password" name="password">
+        <br>
+        <label id="text" for="country">Country: </label>
+        <select id="select" name="option">
+            <option value="kenya">Kenya</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="uganda">Uganda</option>
+            <option value="ethiopia">Ethiopia</option>
+            <option value="south-sudan">Southern-Sudan</option>
+            <option value="north-sudan">Northern-Sudan</option>
+            <option value="djibouti">Djibouti</option>
+            <option value="eritria">Eritria</option>
+            <option value="somalia">Somalia</option>
+            <option value="burundi">Burundi</option>
+            <option value="rwanda">Rwanda</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <input type="submit" id="submit">
+
+
+    </form>
+
+    
+</body>
+
+</html>

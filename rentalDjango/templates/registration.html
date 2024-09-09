@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'registration.css' %}">
+    <title>Registration</title>
+    <style>
+        h3{
+            color: red;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image" src="{% static 'rentalApp/images/logo.jpg' %}">
+    <h1>Registration</h1>
+    {% for message in messages %}
+    <h3>{{message}}</h3>
+    {% endfor %}
+    <form action="registration" method="post">
+        {% csrf_token %}
+        <label id="text" for="username">Username: </label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label id="text" for="email">Email: </label>
+        <input type="email" id="email" name="email">
+        <br>
+		<label id="text" for="password">Password: </label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label id="text" for="password2">Re-enter Password: </label>
+        <input type="password" id="password" name="password2">
+        <br>
+        <input type="submit" id="submit">
+
+
+    </form>
+
+    
+</body>
+
+</html>

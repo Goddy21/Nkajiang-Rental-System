@@ -1,0 +1,42 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+    <title>Login</title>
+    <style>
+        h3{
+            color:red;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image" src="{% static 'rentalApp/images/logo.jpg' %}">
+    <h1>Login</h1>
+    <br>
+    {% for message in messages %}
+    <h3>{{message}}</h3>
+    {% endfor %}
+    <br>
+    <form action="login" method="post">
+        {% csrf_token %}
+        <label id="text" for="username">Username: </label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label id="text" for="password">Password: </label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+	<br>
+	<p id="reg"><a href="registration">I Don't have an account yet</a></p>
+</body>
+
+
+
+</html>

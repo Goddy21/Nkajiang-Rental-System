@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#password {
+    margin: 20px;
+}
+
+#email {
+    margin: 20px;
+}
+
+#submit {
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #351868;
+	color:white;
+	border:none;
+}
+
+#text {
+    font-weight: bold;
+    color: #351868;
+}
+
+h1 {
+    font-size: 4vw;
+    color: #351868;
+	margin-bottom:;
+}
+#image{
+	margin-top:50px;
+}
+#submit:hover {
+    background: orange;
+	color:black;
+    transition: all 0.1s ease;
+}
+#reg{
+	margin:5px;
+	font-size:1.2rem;
+}

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#firstname {
+    margin: 20px;
+    padding-left: 20px;
+}
+
+#surname {
+    margin: 20px;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+
+#age {
+    margin: 20px;
+    padding-left: 20px;
+    margin-left: 55px;
+}
+
+#email {
+    margin: 20px;
+    padding-left: 20px;
+    margin-left: 40px;
+}
+
+#number {
+    margin: 20px;
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+#password {
+    margin: 20px;
+    padding-left: 20px;
+}
+
+#select {
+    margin: 20px;
+    padding-left: 20px;
+}
+
+#submit {
+    padding: 5px;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    background-color: #351868;
+	color:white;
+	border:none;
+}
+
+#image {
+    margin-top: -100px;
+}
+
+#text {
+    color: #351868;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4vw;
+    color: #351868;
+}
+
+#submit:hover {
+    background: orange;
+	color:black;
+    transition: all 0.1s ease;
+}
